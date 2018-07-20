@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Effective JavaScript: Frogger</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<body class="">
-  <!-- Popup that shows up when you win-->
-  <div id="win" class="win popup hidden">
-    <h2>Congratulations!</h2>
-    <p>You Won!</p>
-    <button id="restart" class="restart">Restart</button>
-  </div>
-  <!-- Choosing your character popup -->
- <div id="character" class="character popup">
-   <h2>Choose Your Character!</h2>
-   <div class="characterSelection" id="character-selection">
-     <!-- Girl character -->
-     <div id="girl" class="selectionItem selected">
-       <img src='images/char-pink-girl.png' alt="GIRL">
-       <p>Girl</p>
-     </div>
-      <!--Bug character-->
-     <div id="bug" class="selectionItem">
-       <img src='images/enemy-bug.png' alt="BUG">
-       <p>Bug</p>
-     </div>
-     <!-- Boy character-->
-     <div id="boy" class="selectionItem">
-       <img src='images/char-boy.png' alt="BOY">
-       <p>Boy</p>
-     </div>
-</div>
-  <!-- The button for starting the game -->
-    <button id="start" class="start">Start</button>
-  </div>
-</div>
-  <!-- The overlay -->
-  <div id="overlay" class="overlay"></div>
-
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+	<!-- Popup that shows up when you win-->
+	<div class="win popup hidden" id="win">
+		<h2>Congratulations!</h2>
+		<p>You Won!</p><button class="restart" id="restart">Restart</button>
+	</div><!-- Choosing your character popup -->
+	<div class="character popup" id="character">
+		<h2>Choose Your Character!</h2>
+		<div class="characterSelection" id="character-selection">
+			<!-- Girl character -->
+			<div class="selectionItem selected" id="girl">
+				<img alt="GIRL" src='images/char-pink-girl.png'>
+				<p>Girl</p>
+			</div><!--Bug character-->
+			<div class="selectionItem" id="bug">
+				<img alt="BUG" src='images/enemy-bug.png'>
+				<p>Bug</p>
+			</div><!-- Boy character-->
+			<div class="selectionItem" id="boy">
+				<img alt="BOY" src='images/char-boy.png'>
+				<p>Boy</p>
+			</div>
+		</div><!-- The button for starting the game -->
+		<button class="start" id="start">Start</button>
+	</div><!-- The overlay -->
+	<div class="overlay" id="overlay"></div>
+	<script src="js/resources.js">
+	</script> 
+	<script src="js/app.js">
+	</script> 
+	<script src="js/engine.js">
+	</script>
 </body>
 </html>
