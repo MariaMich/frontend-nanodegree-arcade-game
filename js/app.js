@@ -76,7 +76,7 @@ var Player = function(x, y) {
 // Checking to see if the player has finished
 Player.prototype.update = function(dt) {
 	// If true the congratulations popup appears
-	if (player.y === 0) winGame();
+	if (this.y === 0) winGame();
 };
 // Drawing the player on screen
 Player.prototype.render = function() {
